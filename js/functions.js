@@ -9,50 +9,45 @@ document.getElementById('hide-info').onclick = function () {
     document.getElementById('show-info').style.display='inline';
 };
 
-// collapse/expand news widget
-var newsWidget = document.getElementById("news-widget");
-newsWidget.getElementsByClassName("header")[0].onclick = function () {
-    if (newsWidget.className == "widget") {
-        newsWidget.className = "widget collapsed";
-    } else {
-        newsWidget.className = "widget";
+//collapse/expand all widgets
+function initAllWidgets() {
+    function initWidget(widget) {
+        widget.getElementsByClassName('header')[0].onclick = function () {
+            if (widget.className == "widget") {
+                widget.className = "widget collapsed";
+            } else {
+                widget.className = "widget";
+            }
+        }
     }
-};
 
-// collapse/expand help widget
-var helpWidget = document.getElementById("help-widget");
-helpWidget.getElementsByClassName("header")[0].onclick = function () {
-    if (helpWidget.className == "widget") {
-        helpWidget.className = "widget collapsed";
-    } else {
-        helpWidget.className = "widget";
-    }
-};
-
-//collapse/expand new widget
-var newWidget = document.getElementById("new-widget");
-newWidget.getElementsByClassName("header")[0].onclick = function () {
-    if (newWidget.className == "widget") {
-        newWidget.className = "widget collapsed";
-    } else {
-        newWidget.className = "widget";
-    }
-};
-
-//collapse/expand search widget
-var searchWidget = document.getElementById("google-search");
-searchWidget.getElementsByClassName("header")[0].onclick = function () {
-    if (searchWidget.className == "widget") {
-        searchWidget.className = "widget collapsed";
-    } else {
-        searchWidget.className = "widget";
-    }
-};
-
-// actions for top links
-var links = document.getElementById("top-menu").getElementsByTagName("a");
-for (var i = 0; i < links.length; i++) {
-    links[i].onclick = function () {
-        document.getElementById("breadcrumb").innerHTML = this.innerHTML + " : " + this.title;
+    var widgets = document.getElementsByClassName("widget");
+    for (var i = 0; i < widgets.length; i++){
+        initWidget(widgets[i]);
     }
 }
+
+// actions for top links
+function initLinks() {
+    var links = document.getElementById("top-menu").getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++) {
+        links[i].onclick = function () {
+            document.getElementById("breadcrumb").innerHTML = this.innerHTML + " : " + this.title;
+        }
+    }
+}
+initAllWidgets();
+initLinks();
+
+var parametri = {
+    name: 'Darius',
+    phone: '1345287352'
+};
+$.ajax({
+    url: 'index.html',
+    data: parametri
+})
+
+$('.f1_container').click(function() {
+    $(this).toggleClass('active');
+});

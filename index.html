@@ -20,10 +20,10 @@
     <div id="top-menu">
         <div>
             <ul>
-                <li><a href="#" title="welcome home">HOME</a></li>
-                <li><a href="#" title="my personal projects">Projects</a></li>
-                <li><a href="#" title="about me">About</a></li>
-                <li><a href="#" title="contact me">Contact</a></li>
+                <li><a href="index.html" title="welcome home">HOME</a></li>
+                <li><a href="projects.html" title="my personal projects">Projects</a></li>
+                <li><a href="about.html" title="about me">About</a></li>
+                <li><a href="contact.html" title="contact me">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -49,16 +49,26 @@
                 </div>
             </div>
             
-            <div id="help-widget" class="widget">
-                <div class="header">Help links</div>
+            <div id="help-widget" class="widget collapsed">
+                <div class="header" title="Show/Hide content">Help links</div>
                 <div class="content">
                     <p><a href="http://www.cssmatic.com/box-shadow" target="_blank">box-shadow generator</a></p>
                     <p><a href="http://www.cssmatic.com/border-radius" target="_blank">border-radius generator</a></p>
                 </div>
             </div>
+
+            <div id="theme-widget" class="widget collapsed">
+                <div class="header" title="Show/Hide content">Themes</div>
+                <div class="content">
+                    <ol>
+                        <li>theme 1</li>
+                        <li>theme 2</li>
+                    </ol>
+                </div>
+            </div>
             
-            <div id="google-search" class="widget">
-                <div class="header">Google Search</div>
+            <div id="google-search" class="widget collapsed">
+                <div class="header" title="Show/Hide content">Google Search</div>
                 <div class="content">
                     <form action="http://www.google.com/search" target="_blank">
                         <label for="q">Keyword(s):</label>
@@ -75,36 +85,326 @@
         <div id="content">
             <div id="breadcrumb">HOME : welcome home</div>
 
-            <h1>Homework</h1>
-            <p>Write some info about you.</p>
-            <p>
-                Make this web site as you wish. Change/Add any <strong>attributes</strong> you have learned in this example.
-                Add/edit <strong>elements</strong> in HTML page as you wish, to create custom components in your page.
-            </p>
-            <h2>Exercises</h2>
-            <ol>
-                <li>Add new widget</li>
-                <li>Make sure you understand how to find any elements with:
-                    <ul>
-                        <li>document.getElementById('element-id')</li>
-                        <li>document.getElementsByClassName("class-name")</li>
-                        <li>document.getElementsByTagName("a")</li>
-                        <li>and nested combinations of those</li>
-                    </ul>
-                </li>
-                <li>play in FireBug to find and change some attributes (color, display, width, height, etc.) of some elements</li>
-                <li>Make all widgets collapsible</li>
-            </ol>
-            <p>I hope is all clear.</p>
+            <div class="cards">
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png"/>
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>A</div>
+                                <div class="small-symbol"> &spades; </div>
+                                <div class="card-symbol">&spades;</div>
+                                <div class="card-name-bottom">
+                                    <div>A</div>
+                                    <div class="small-symbol">&spades;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png" />
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>Q</div>
+                                <div class="small-symbol"> &clubs; </div>
+                                <div class="card-symbol">&clubs;</div>
+                                <div class="card-name-bottom">
+                                    <div>Q</div>
+                                    <div class="small-symbol">&clubs;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png"/>
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>A</div>
+                                <div class="small-symbol"> &spades; </div>
+                                <div class="card-symbol">&spades;</div>
+                                <div class="card-name-bottom">
+                                    <div>A</div>
+                                    <div class="small-symbol">&spades;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png" />
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>Q</div>
+                                <div class="small-symbol"> &clubs; </div>
+                                <div class="card-symbol">&clubs;</div>
+                                <div class="card-name-bottom">
+                                    <div>Q</div>
+                                    <div class="small-symbol">&clubs;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png"/>
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>A</div>
+                                <div class="small-symbol"> &spades; </div>
+                                <div class="card-symbol">&spades;</div>
+                                <div class="card-name-bottom">
+                                    <div>A</div>
+                                    <div class="small-symbol">&spades;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png" />
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>Q</div>
+                                <div class="small-symbol"> &clubs; </div>
+                                <div class="card-symbol">&clubs;</div>
+                                <div class="card-name-bottom">
+                                    <div>Q</div>
+                                    <div class="small-symbol">&clubs;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png"/>
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>A</div>
+                                <div class="small-symbol"> &spades; </div>
+                                <div class="card-symbol">&spades;</div>
+                                <div class="card-name-bottom">
+                                    <div>A</div>
+                                    <div class="small-symbol">&spades;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png" />
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>Q</div>
+                                <div class="small-symbol"> &clubs; </div>
+                                <div class="card-symbol">&clubs;</div>
+                                <div class="card-name-bottom">
+                                    <div>Q</div>
+                                    <div class="small-symbol">&clubs;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png"/>
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>A</div>
+                                <div class="small-symbol"> &spades; </div>
+                                <div class="card-symbol">&spades;</div>
+                                <div class="card-name-bottom">
+                                    <div>A</div>
+                                    <div class="small-symbol">&spades;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png" />
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>Q</div>
+                                <div class="small-symbol"> &clubs; </div>
+                                <div class="card-symbol">&clubs;</div>
+                                <div class="card-name-bottom">
+                                    <div>Q</div>
+                                    <div class="small-symbol">&clubs;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png"/>
+                        </div>
+                        <div class="back face">
+                            <div class="card">
+                                <div>A</div>
+                                <div class="small-symbol"> &spades; </div>
+                                <div class="card-symbol">&spades;</div>
+                                <div class="card-name-bottom">
+                                    <div>A</div>
+                                    <div class="small-symbol">&spades;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="f1_container">
+                    <div class="shadow f1_card">
+                        <div class="front face">
+                            <img class="card-image" src="img\cardback2.png" />
+                        </div>
+                        <div class="back face">
+                            <div class="card red-card">
+                                <div>Q</div>
+                                <div class="small-symbol"> &diams; </div>
+                                <div class="card-symbol">&diams;</div>
+                                <div class="card-name-bottom">
+                                    <div>Q</div>
+                                    <div class="small-symbol">&diams;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="card">
+                    <div class="card-front">
+                        <div>A</div>
+                        <div class="small-symbol"> &spades; </div>
+                        <div class="card-symbol">&spades;</div>
+                        <div class="card-name-bottom">
+                            A
+                            <div class="small-symbol">&spades;</div>
+                        </div>
+                    </div>
+                    &lt;!&ndash;<div class="card-back">
+                        <img src="img\cardback.png"/>
+                    </div>&ndash;&gt;
+
+                </div>-->
+
+                <!--<div class="card red-card">
+                    <div class="card-front">
+                        <div>K</div>
+                        <div class="small-symbol"> &hearts; </div>
+                        <div class="card-symbol">&hearts;</div>
+                        <div class="card-name-bottom">
+                            K
+                            <div class="small-symbol">&hearts;</div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <img class="card-image" src="img\cardback.png"/>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>Q</div>
+                    <div class="small-symbol"> &clubs; </div>
+                    <div class="card-symbol">&clubs;</div>
+                    <div class="card-name-bottom">
+                        <div>Q</div>
+                        <div class="small-symbol">&clubs;</div>
+                    </div>
+                </div>
+
+
+                <div class="card red-card">
+                    <div>J</div>
+                    <div class="small-symbol"> &diams; </div>
+                    <div class="card-symbol">&diams;</div>
+                    <div class="card-name-bottom">
+                        <div>J</div>
+                        <div class="small-symbol">&diams;</div>
+                    </div>
+                </div>-->
+            </div>
+
+            <div class="clear"></div>
+
+            <div>
+                <h1>Homework</h1>
+                <p>Write some info about you.</p>
+                <p>
+                    Make this web site as you wish. Change/Add any <strong>attributes</strong> you have learned in this example.
+                    Add/edit <strong>elements</strong> in HTML page as you wish, to create custom components in your page.
+                </p>
+                <h2>Exercises</h2>
+                <ol>
+                    <li>Add new widget</li>
+                    <li>Make sure you understand how to find any elements with:
+                        <ul>
+                            <li>document.getElementById('element-id')</li>
+                            <li>document.getElementsByClassName("class-name")</li>
+                            <li>document.getElementsByTagName("a")</li>
+                            <li>and nested combinations of those</li>
+                        </ul>
+                    </li>
+                    <li>play in FireBug to find and change some attributes (color, display, width, height, etc.) of some elements</li>
+                    <li>Make all widgets collapsible</li>
+                </ol>
+                <p>I hope is all clear.</p>
+            </div>
         </div>
-        <div class="clear"></div>
+        <!--<div class="clear"></div>-->
     </div>
+    <table id="chess-board">
+        <tr class="row">
+
+        </tr>
+        <tr class="row">
+
+        </tr>
+    </table>
 
     <footer>
         <p>&copy; 2015 FastTrackIT. All rights reserved.</p>
     </footer>
 </div>
 
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script src="js/functions.js" type="text/javascript"></script>
 
 </body>
